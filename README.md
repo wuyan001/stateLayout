@@ -1,7 +1,7 @@
 # StateLayout
 Simple way to change your layout state, like loading, empty, error. Strong customizitaion, written by Kotlin.
 
-
+# 参考:: https://github.com/li-xiaojun/StateLayout
 # Feature
 - 对已有布局零侵入，无需修改现有布局
 - 支持对Activity, Fragment, View进行状态切换
@@ -19,7 +19,6 @@ Simple way to change your layout state, like loading, empty, error. Strong custo
 ```
 implementation 'com.lsg:statelayout:最新版本号'
 ```
-https://github.com/li-xiaojun/StateLayout
 
 # Usage
 对Activity/Fragment使用:
