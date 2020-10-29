@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lsg.demo1.MainActivity">
+
+        <Button
+            android:id="@+id/btn_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="loading" />
+
+        <Button
+            android:id="@+id/btn_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="empty" />
+
+        <Button
+            android:id="@+id/btn_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="error" />
+
+        <Button
+            android:id="@+id/btn_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="content" />
+
+        <TextView
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:background="#ddd"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="我是一块任意的内容View，使用StateLayout来切换状态"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/login"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#ddd"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="登录"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/login"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/focus"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="关注"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_in_fragment"
+            android:layout_marginTop="20dp"
+            android:text="Fragment中使用"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.lsg.statelayout.StateLayout
+            android:id="@+id/slInLayout"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvInLayout"
+                android:gravity="center"
+                android:text="测试布局中使用"
+                android:background="#9f00"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        </com.lsg.statelayout.StateLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

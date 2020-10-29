@@ -15,11 +15,10 @@ Simple way to change your layout state, like loading, empty, error. Strong custo
 
 
 # Gradle
-
+[ ![Download](https://api.bintray.com/packages/li-xiaojun/jrepo/statelayout/images/download.svg) ](https://bintray.com/li-xiaojun/jrepo/statelayout/_latestVersion)
 ```
-implementation 'com.lsg:statelayout:最新版本号'
+implementation 'com.lxj:statelayout:最新版本号'
 ```
-https://github.com/li-xiaojun/StateLayout
 
 # Usage
 对Activity/Fragment使用:
@@ -46,7 +45,7 @@ stateLayout.showEmpty()
 
 在布局中使用:
 ```
-<com.lsg.statelayout.StateLayout
+<com.lxj.statelayout.StateLayout
             android:id="@+id/slInLayout"
             android:layout_marginBottom="40dp"
             android:layout_width="match_parent"
@@ -60,7 +59,7 @@ stateLayout.showEmpty()
                 android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
-        </com.lsg.statelayout.StateLayout>
+        </com.lxj.statelayout.StateLayout>
 ```
 
 自定义每种状态对应的布局:

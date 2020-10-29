@@ -1,0 +1,16 @@
+
+
+/**
+ * 手动
+ * 用到的命令
+ * gradlew clean build generateRelease----执行完毕可以在库的build文件夹下生成一个release-1.1.9/zip文件
+ * 2.bintray网站上add version---发布(publish all)
+ */
+
+ext {
+    PUBLISH_GROUP_ID = 'com.lsg'
+    PUBLISH_ARTIFACT_ID = 'statelayout'
+    PUBLISH_VERSION = '1.1.1'
+}
+
+//apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
